@@ -1,0 +1,14 @@
+name: Run PowerShell Hello World
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  hello-world:
+    runs-on: windows-latest
+    steps:
+      - name: Run PowerShell Hello World
+        shell: pwsh
+        run: |
+          Write-Output "Hello World"
